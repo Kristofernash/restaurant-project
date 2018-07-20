@@ -24,7 +24,7 @@
             <br>
 
             <div class="text-center">
-                <a href="/tables">
+                <a href="/view">
                     <button type="button" class="btn btn-lg btn-primary">
                         <span class="glyphicon glyphicon-list-alt"></span> View Tables</button>
                 </a>
@@ -83,7 +83,7 @@
                 <p>
                     <a href="/api/tables">API Table Link</a> |
                     <a href="/api/waitlist">API Wait List</a> |
-                    <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a>
+                    <a href="https://github.com/Throwback74/restaurant-project">GitHub Repo</a>
                 </p>
             </div>
         </footer>
@@ -124,12 +124,12 @@
 
                 // If a table is available... tell user they are booked.
                 if (data) {
-                    alert("Yay! You are officially booked!");
+                    alert(data.message);
                 }
 
                 // If a table is available... tell user they on the waiting list.
                 else {
-                    alert("Sorry you are on the wait list");
+                    alert(data.message);
                 }
 
                 // Clear the form when submitting
